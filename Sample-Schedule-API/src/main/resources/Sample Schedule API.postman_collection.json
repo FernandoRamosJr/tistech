@@ -1,0 +1,683 @@
+{
+	"info": {
+		"_postman_id": "9347479a-1e15-436d-9d0f-8a5575a315fc",
+		"name": "Sample Schedule API",
+		"description": "# Introdução\nAPI CRUD para agendamento de exames de certificado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4603435"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/auth",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				},
+				"description": "Faz a autenticação"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/agendamento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamento"
+					]
+				},
+				"description": "Busca a lista de agendamentos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/agendamento/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamento/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamento",
+						"{id}"
+					]
+				},
+				"description": "Busca um agendamento pelo id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/agendamento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamento"
+					]
+				},
+				"description": "Cria um novo agendamento"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/agendamento/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamento/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamento",
+						"{id}"
+					]
+				},
+				"description": "Atualiza um agendamento"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/agendamento/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/agendamento/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agendamento",
+						"{id}"
+					]
+				},
+				"description": "Deleta um agendamento"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/candidato",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidato"
+					]
+				},
+				"description": "Busca a lista de candidatos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/candidato/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidato/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidato",
+						"{id}"
+					]
+				},
+				"description": "Busca um candidato pelo id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/candidato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidato"
+					]
+				},
+				"description": "Cria um novo candidato"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/candidato/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidato/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidato",
+						"{id}"
+					]
+				},
+				"description": "Atualiza um candidato"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/candidato/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidato/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidato",
+						"{id}"
+					]
+				},
+				"description": "Deleta um candidato"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/disponibilidade",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/disponibilidade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disponibilidade"
+					]
+				},
+				"description": "Busca a lista de disponibilidades"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/disponibilidade/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/disponibilidade/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disponibilidade",
+						"{id}"
+					]
+				},
+				"description": "Busca uma disponibilidade por id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/disponibilidade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/disponibilidade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disponibilidade"
+					]
+				},
+				"description": "Cria uma nova disponibilidade"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/disponibilidade/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/disponibilidade/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disponibilidade",
+						"{id}"
+					]
+				},
+				"description": "Atualiza uma disponibilidade"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/disponibilidade/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/disponibilidade/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disponibilidade",
+						"{id}"
+					]
+				},
+				"description": "Deleta uma disponibilidade"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/exame",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/exame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exame"
+					]
+				},
+				"description": "Busca a lista de exames"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/exame/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/exame/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exame",
+						"{id}"
+					]
+				},
+				"description": "Busca um exame por id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/exame",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/exame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exame"
+					]
+				},
+				"description": "Cria um novo exame"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/exame/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/exame/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exame",
+						"{id}"
+					]
+				},
+				"description": "Atualiza um exame"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/exame/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/exame/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exame",
+						"{id}"
+					]
+				},
+				"description": "Deleta um exame"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sala",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/sala",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sala"
+					]
+				},
+				"description": "Busca a lista de salas"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sala/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/sala/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sala",
+						"{id}"
+					]
+				},
+				"description": "Busca uma sala por id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sala",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/sala",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sala"
+					]
+				},
+				"description": "Cria uma nova sala"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sala/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/sala/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sala",
+						"{id}"
+					]
+				},
+				"description": "Atualiza uma sala"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sala/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/sala/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sala",
+						"{id}"
+					]
+				},
+				"description": "Deleta uma sala"
+			},
+			"response": []
+		}
+	]
+}
